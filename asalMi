@@ -1,0 +1,14 @@
+def asal_mi(n):
+    if n < 2:
+        return False
+    for i in range(2, int(n**0.5) + 1):
+        print(n)
+        if n % i == 0:
+            return False
+    return True
+sayi = int(input("Bir sayi girin: "))
+
+if asal_mi(sayi):
+    print(f"{sayi} bir asal sayidir.")
+else:
+    print(f"{sayi} asal değildir.")
